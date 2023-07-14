@@ -88,7 +88,7 @@ python2 sending_sms_broadcast.py
 log should be :  subscriber extension 0341220590 sms sender extension 0341220590 send ALERT Corona virus  
 
   
-* Solution 2 : using one motorola phone
+* Solution 2 : using one motorola phone  
 (Not so stable and  need synchronization of existing BTS by finding arfcn of synchronization so if we jam the existing BTS the half mitm doesn't exist anymore)
 ```
 wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/nitb-script-all/main/osmo-nitb-scripts-calypsobts.zip
