@@ -35,7 +35,7 @@ dmesg | grep ttyUSB*
 wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/nitb-script-all/main/osmo-nitb-scripts.zip
 ```
 ```
-unzip osmo-nitb-scripts
+unzip osmo-nitb-scripts.zip
 ```
 ```
 cd osmo-nitb-scripts
