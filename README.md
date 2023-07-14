@@ -55,6 +55,7 @@ ctrl+shift+T
 ```
 cd osmo-nitb-scripts
 ```
+```
 python3 main_uhd_spoof.py
 ```
 ctrl+shift+T
