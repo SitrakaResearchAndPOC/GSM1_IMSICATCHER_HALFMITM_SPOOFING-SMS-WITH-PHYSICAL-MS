@@ -140,8 +140,8 @@ let's see for example imsi as 646040222463674 and extension as 0341220590
 ```
 bash finding_imsi_extenstion.sh
 ```
-Tape *#*#4636#*#* and choose GSM only on your Android phone
-Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01
+Tape *#*#4636#*#* and choose GSM only on your Android phone  
+Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01  
 Tape *#001# for finding your phone number (extension with osmo-bts)   
 ```
 python2 sending_sms_spoof_byextension.py
