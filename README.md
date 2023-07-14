@@ -23,6 +23,7 @@
 * Add one users and modify core network for associating it with number 0341220590
 * Send message from 0341220590 to 0341220590
 * Send broadcast message
+* Homework : Change the number 0341220590 as 0341220591
 
 # Command you need : 
 ```
@@ -150,6 +151,17 @@ Sending for all extensions in osmo-bts
 python2 sending_sms_broadcast.py 
 ```
 log should be :  subscriber extension 0341220590 sms sender extension 0341220590 send ALERT Corona virus  
+
+
+
+
+* Remark : 
+Don't use this delete_all.sh script after running BTS, the best is before running a bts  
+```
+bash delete_all.sh
+```
+The extension 0341220590 should exist as a mobile phone on the GSM network
+
 
 
 
