@@ -1,7 +1,7 @@
 # GSM_IMSICATCHER_HALFMITM_SPOOFING-SMS-WITH-PHYSICAL-MS
 * [motorola](https://www.youtube.com/watch?v=ZKa86zAWmQY&pp=ygURZ3NtIHNuaWZmaW5nIDI5YzM%3D) documentation
 * [spoofing](https://github.com/godfuzz3r/osmo-nitb-scripts/tree/master)
-* [phddays]()
+* [phddays](https://sudonull.com/post/97315-MiTM-Mobile-contest-how-they-broke-mobile-communications-at-PHDays-V-Positive-Technologies-blog)
 # Half MITM = Fake BTS only
 # Why it is possible ?
 * Fake base station with open ciphering named A5/0, and the  network could be GSM(sms, call), and GPRS, EDGE
