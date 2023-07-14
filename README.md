@@ -119,6 +119,7 @@ Tape ctrl+shift+T
 ```
 cd osmo-nitb-scripts-calypsobts
 ```
+```
 python3 main_spoof.py
 ```
 ctrl+shift+T
