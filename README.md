@@ -51,8 +51,8 @@ Running the transceiver
 ```
 osmo-trx-uhd -C /etc/osmocom/osmo-trx-uhd.cfg
 ```
-Running main_uhd_spoof associate with configs/openbsc_spoof.cfg
-ctrl+shift+T
+Running main_uhd_spoof associate with configs/openbsc_spoof.cfg  
+ctrl+shift+T  
 ```
 cd osmo-nitb-scripts
 ```
