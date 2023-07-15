@@ -67,7 +67,7 @@ ctrl+shift+T
 ```
 cd osmo-nitb-scripts/scripts_spoof1
 ```
-Tape "*#*#4636#*#*" and choose GSM only on your Android phone  
+Tape `*#*#4636#*#*` and choose GSM only on your Android phone  
 Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01  
 Tape *#001# for finding your phone number (extension with osmo-bts)   
 ```
