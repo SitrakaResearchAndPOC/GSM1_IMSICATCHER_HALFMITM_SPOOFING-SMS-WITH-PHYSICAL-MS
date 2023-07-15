@@ -121,6 +121,8 @@ ADDING DEBUG MODE OPTIONS : --debug DRSL:DOML:DLAPDM
 ```
 Have a look on the terminal at the command : /usr/local/bin/osmo-nitb --yes-i-really-want-to-run-prehistoric-software -s -C -c /etc/osmocom2/osmo-nitb.cfg -l /var/lib/osmocom/hlr.sqlite3  --debug=DRLL:DCC:DMM:DRR:DRSL:DNM  
 
+
+
   
 Tape *#*#4636#*#* and choose GSM only on your Android phone  
 Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01  
