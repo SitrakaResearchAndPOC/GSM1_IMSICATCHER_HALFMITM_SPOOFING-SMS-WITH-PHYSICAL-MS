@@ -128,7 +128,7 @@ Tape `*#001#` for finding your phone number (extension with osmo-bts)
 Have a look on the log about USSD: Own number requested  
 
   
-Tape USSD *100*123#
+Tape USSD `*100*123#`
 Have a look on log of USSB : Unhandled USSD  (possible to steal password and credits)
   
 
@@ -278,7 +278,7 @@ bash trx.sh
 Click button power of motorola phone  
 Tape ctrl+shift+T  
 Launching osmo-nitb  with debug mode --debug=DRLL:DCC:DMM:DRR:DRSL:DNM
-Database at : /usr/src/CalypsoBTS/hlr.sqlite3
+Database at : /usr/src/CalypsoBTS/hlr.sqlite3  
 ```
 osmo-nitb --yes-i-really-want-to-run-prehistoric-software -c /usr/src/CalypsoBTS/openbsc.cfg -l /usr/src/CalypsoBTS/hlr.sqlite3 -P -C --debug=DRLL:DCC:DMM:DRR:DRSL:DNM
 ```
@@ -300,7 +300,7 @@ Tape `*#001#` for finding your phone number (extension with osmo-bts)
 Have a look on the log about USSD: Own number requested  
 
   
-Tape USSD *100*123#
+Tape USSD `*100*123#`
 Have a look on log of USSB : Unhandled USSD  (possible to steal password and credits)
   
 
