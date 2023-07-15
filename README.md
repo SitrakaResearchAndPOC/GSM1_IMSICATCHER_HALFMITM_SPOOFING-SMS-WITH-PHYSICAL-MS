@@ -69,7 +69,7 @@ cd osmo-nitb-scripts/scripts_spoof1
 ```
 Tape `*#*#4636#*#*` and choose GSM only on your Android phone  
 Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01  
-Tape *#001# for finding your phone number (extension with osmo-bts)   
+Tape `*#001#` for finding your phone number (extension with osmo-bts)   
 ```
 bash finding_imsi_extenstion.sh
 ```
@@ -123,12 +123,12 @@ Have a look on the terminal at the command : /usr/local/bin/osmo-nitb --yes-i-re
 
 
   
-Tape *#*#4636#*#* and choose GSM only on your Android phone  
+Tape `*#*#4636#*#*` and choose GSM only on your Android phone  
 Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01  
 Have a look on log for capturing IMSI and IMEI  
 
   
-Tape *#001# for finding your phone number (extension with osmo-bts)   
+Tape `*#001#` for finding your phone number (extension with osmo-bts)   
 Have a look on the log about USSD: Own number requested  
 
   
@@ -180,7 +180,7 @@ Hardware setup 1 : Need battery and not programmable with arduino
 
 Hardware setup 2 : No need battery and programmable with arduino  
 <p align="center">
-  <img width="600" height="400" src="https://github.com/SitrakaResearchAndPOC/GSM_IMSICATCHER_HALFMITM_SPOOFING-SMS-WITH-PHYSICAL-MS/blob/main/USB_TTL.jpg">
+  <img src="https://github.com/SitrakaResearchAndPOC/GSM_IMSICATCHER_HALFMITM_SPOOFING-SMS-WITH-PHYSICAL-MS/blob/main/USB_TTL.jpg">
 </p>
 
 
@@ -194,7 +194,7 @@ unzip osmo-nitb-scripts-calypsobts.zip
 ```
 cd osmo-nitb-scripts-calypsobts
 ```
-Tape *#*#4636#*#* and choose GSM only on your Android phone  
+Tape `*#*#4636#*#*` and choose GSM only on your Android phone  
 Installing network signal guru on your android phone  
 And finding the arfcn that this one is connect  
 Let's name this arfcn as 975  
@@ -234,9 +234,9 @@ let's see for example imsi as 646040222463674 and extension as 0341220590
 ```
 bash finding_imsi_extenstion.sh
 ```
-Tape *#*#4636#*#* and choose GSM only on your Android phone  
+Tape `*#*#4636#*#*` and choose GSM only on your Android phone  
 Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01  
-Tape *#001# for finding your phone number (extension with osmo-bts)   
+Tape `*#001#` for finding your phone number (extension with osmo-bts)   
 ```
 python2 sending_sms_spoof_byextension.py
 ```
@@ -256,7 +256,7 @@ unzip osmo-nitb-scripts-calypsobts.zip
 ```
 cd osmo-nitb-scripts-calypsobts
 ```
-Tape *#*#4636#*#* and choose GSM only on your Android phone  
+Tape `*#*#4636#*#*` and choose GSM only on your Android phone  
 Installing network signal guru on your android phone  
 And finding the arfcn that this one is connect  
 Let's name this arfcn as 975  
@@ -287,12 +287,12 @@ Have a look on the terminal at the command : /usr/local/bin/osmo-nitb --yes-i-re
 
 
   
-Tape *#*#4636#*#* and choose GSM only on your Android phone  
+Tape `*#*#4636#*#*` and choose GSM only on your Android phone  
 Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01  
 Have a look on log for capturing IMSI and IMEI  
 
   
-Tape *#001# for finding your phone number (extension with osmo-bts)   
+Tape `*#001#` for finding your phone number (extension with osmo-bts)   
 Have a look on the log about USSD: Own number requested  
 
   
