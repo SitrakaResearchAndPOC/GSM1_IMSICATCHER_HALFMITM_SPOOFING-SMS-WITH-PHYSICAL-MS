@@ -29,10 +29,6 @@
 * Send broadcast message
 * Homework : Change the number 0341220590 as 0341220591
 
-# Command you need : 
-```
-dmesg | grep ttyUSB*
-```
 
 # Solutions :
 * Solution 1 using USRP
@@ -184,6 +180,10 @@ Hardware setup 2 : No need battery and programmable with arduino
 </p>
 
 
+Command you need : 
+```
+dmesg | grep ttyUSB*
+```
 
 ```
 wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/nitb-script-all/main/osmo-nitb-scripts-calypsobts.zip
@@ -247,6 +247,10 @@ python2 sending_sms_broadcast.py
 log should be :  subscriber extension 0341220590 sms sender extension 0341220590 send ALERT Corona virus  
 
 Solution 2debug : using one motorola phone, manual script on debug mode
+Command you need : 
+```
+dmesg | grep ttyUSB*
+```
 ```
 wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/nitb-script-all/main/osmo-nitb-scripts-calypsobts.zip
 ```
