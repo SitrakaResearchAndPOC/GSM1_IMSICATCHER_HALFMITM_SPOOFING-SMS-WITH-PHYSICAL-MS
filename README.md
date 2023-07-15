@@ -3,7 +3,9 @@
 * [spoofing](https://github.com/godfuzz3r/osmo-nitb-scripts/tree/master)
 * [phddays](https://sudonull.com/post/97315-MiTM-Mobile-contest-how-they-broke-mobile-communications-at-PHDays-V-Positive-Technologies-blog)
 # Half MITM = Fake BTS only
-<img src="https://github.com/SitrakaResearchAndPOC/GSM_IMSICATCHER_HALFMITM_SPOOFING-SMS-WITH-PHYSICAL-MS/blob/main/2G.jpg" align="center">
+<p align="center">
+  <img width="600" height="200" src="https://github.com/SitrakaResearchAndPOC/GSM_IMSICATCHER_HALFMITM_SPOOFING-SMS-WITH-PHYSICAL-MS/blob/main/2G.jpg">
+</p>
 
 # Why it is possible ?
 * Fake base station with open ciphering named A5/0, and the  network could be GSM(sms, call), and GPRS, EDGE
