@@ -120,15 +120,22 @@ ADDING DEBUG MODE OPTIONS : --debug DRSL:DOML:DLAPDM
 /usr/local/bin/osmo-bts-trx -s -c /etc/osmocom2/osmo-bts-trx.cfg --debug DRSL:DOML:DLAPDM
 ```
 Have a look on the terminal at the command : /usr/local/bin/osmo-nitb --yes-i-really-want-to-run-prehistoric-software -s -C -c /etc/osmocom2/osmo-nitb.cfg -l /var/lib/osmocom/hlr.sqlite3  --debug=DRLL:DCC:DMM:DRR:DRSL:DNM  
+
+  
 Tape *#*#4636#*#* and choose GSM only on your Android phone  
 Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01  
-Have a look on log for capturing IMSI and IMEI
-Tape *#001# for finding your phone number (extension with osmo-bts)   
-Have a look on the log about USSD: Own number requested
-Tape USSD *100*123#
-Have a look on log of USSB : Unhandled USSD 
+Have a look on log for capturing IMSI and IMEI  
 
-```
+  
+Tape *#001# for finding your phone number (extension with osmo-bts)   
+Have a look on the log about USSD: Own number requested  
+
+  
+Tape USSD *100*123#
+Have a look on log of USSB : Unhandled USSD  
+
+  
+
 ctrl+shift+T
 ```
 cd osmo-nitb-scripts/scripts_spoof1
