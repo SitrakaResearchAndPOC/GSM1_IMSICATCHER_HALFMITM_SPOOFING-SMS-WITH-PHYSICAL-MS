@@ -92,6 +92,69 @@ python2 sending_sms_broadcast.py
 ```
 log should be :  subscriber extension 0341220590 sms sender extension 0341220590 send ALERT Corona virus  
 
+* Solution 1debug using USRP with manual and debug mode
+```
+wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/nitb-script-all/main/osmo-nitb-scripts.zip
+```
+```
+unzip osmo-nitb-scripts.zip
+```
+```
+cd osmo-nitb-scripts
+```
+```
+bash install_services.sh
+```
+Running the transceiver
+```
+osmo-trx-uhd -C /etc/osmocom/osmo-trx-uhd.cfg
+```
+ADDING DEBUG MODE OPTIONS :  --debug=DRLL:DCC:DMM:DRR:DRSL:DNM  
+Database at : /var/lib/osmocom/hlr.sqlite3 
+```
+/usr/local/bin/osmo-nitb --yes-i-really-want-to-run-prehistoric-software -s -C -c /etc/osmocom2/osmo-nitb.cfg -l /var/lib/osmocom/hlr.sqlite3  --debug=DRLL:DCC:DMM:DRR:DRSL:DNM
+```
+Launching the bts on debug mode
+ADDING DEBUG MODE OPTIONS : --debug DRSL:DOML:DLAPDM
+```
+/usr/local/bin/osmo-bts-trx -s -c /etc/osmocom2/osmo-bts-trx.cfg --debug DRSL:DOML:DLAPDM
+```
+Have a look on the terminal at the command : /usr/local/bin/osmo-nitb --yes-i-really-want-to-run-prehistoric-software -s -C -c /etc/osmocom2/osmo-nitb.cfg -l /var/lib/osmocom/hlr.sqlite3  --debug=DRLL:DCC:DMM:DRR:DRSL:DNM  
+Tape *#*#4636#*#* and choose GSM only on your Android phone  
+Search GSM network (on your phone), associate with PLMN MCC 001 && MNC 01  
+Have a look on log for capturing IMSI and IMEI
+Tape *#001# for finding your phone number (extension with osmo-bts)   
+Have a look on the log about USSD: Own number requested
+Tape USSD *100*123#
+Have a look on log of USSB : Unhandled USSD 
+
+```
+ctrl+shift+T
+```
+cd osmo-nitb-scripts/scripts_spoof1
+```
+```
+bash finding_imsi_extenstion.sh
+```
+You could find imsi and extension  
+let's see for example imsi as 646040222463674 and extension as 126
+```
+bash set_imsi_extension.sh 646040222463674 0341220590
+```
+Verify by if the association is correct
+let's see for example imsi as 646040222463674 and extension as 0341220590
+```
+bash finding_imsi_extenstion.sh
+```
+```
+python2 sending_sms_spoof_byextension.py
+```
+Sending for all extensions in osmo-bts
+```
+python2 sending_sms_broadcast.py 
+```
+log should be :  subscriber extension 0341220590 sms sender extension 0341220590 send ALERT Corona virus  
+
   
 * Solution 2 : using one motorola phone  
 (Not so stable and  need synchronization of existing BTS by finding arfcn of synchronization so if we jam the existing BTS the half mitm doesn't exist anymore)
