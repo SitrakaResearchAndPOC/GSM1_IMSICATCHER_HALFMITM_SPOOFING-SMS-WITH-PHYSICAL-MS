@@ -4,6 +4,8 @@
 * [phddays](https://sudonull.com/post/97315-MiTM-Mobile-contest-how-they-broke-mobile-communications-at-PHDays-V-Positive-Technologies-blog)
 
 # conferences
+* Software Defined Radio - An Introduction [videos](https://www.youtube.com/watch?v=kWfU1G3Jq4w)
+* Software Defined Radio and rtl-sdr - Harald Welte [videos](https://www.youtube.com/watch?v=8cNlov4Vdck)
 * 25c3: Running your own GSM network [videos](https://www.youtube.com/watch?v=e_9hPRF5fzA)
 * 27c3: Running your own GSM stack on a phone [videos](https://www.youtube.com/watch?v=ihbRtTzc0NI)
 * Running a basic circuit-switched Osmocom GSM network [videos](https://www.youtube.com/watch?v=2SNb4pXnN80&t=9s)
@@ -14,7 +16,15 @@
 * GreedyBTS: Hacking Adventures in GSM - Presented By Hacker Fantastic [videos](https://www.youtube.com/watch?v=mqd9WePaZ8o&t=8s)
 * 27c3: Wideband GSM Sniffing [videos](https://www.youtube.com/watch?v=fH_fXSr-FhU)
 * OpenBTS workshop at 29c3 [videos1](https://www.youtube.com/watch?v=R2uhnBK2hlo&pp=ygUYT3BlbkJUUyB3b3Jrc2hvcCBhdCAyOWMz) [videos2](https://www.youtube.com/watch?v=IpBmIO2l78Q&pp=ygUYT3BlbkJUUyB3b3Jrc2hvcCBhdCAyOWMz) [videos3](https://www.youtube.com/watch?v=IsfLnfWCJZA&pp=ygUYT3BlbkJUUyB3b3Jrc2hvcCBhdCAyOWMz) [videos4](https://www.youtube.com/watch?v=7pqtriEM4wY&pp=ygUYT3BlbkJUUyB3b3Jrc2hvcCBhdCAyOWMz) [videos5](https://www.youtube.com/watch?v=bpqWkZRidxA&pp=ygUYT3BlbkJUUyB3b3Jrc2hvcCBhdCAyOWMz)
-  
+* OsmoDevCon'12: UmTRX transceiver for OpenBTS [videos](https://www.youtube.com/watch?v=ErWeT_8DV3I)
+* Building and Running Community Cellular Networks with OpenBTS [videos](https://www.youtube.com/watch?v=6yICjkyntH8)
+* days Security Conference: Harald Welte - OsmocomBB: GSM protocol level security in GSM networks [videos1](https://www.youtube.com/watch?v=H7rNKZdASBE) [videos2](https://www.youtube.com/watch?v=-0UojNjRnAA&pp=ygUSU0RSICsgaGFyYWxkIHdlbHRl)
+* DeepSec 2010 OsmocomBB A tool for GSM protocol level security analysis of GSM networks [videos](https://www.youtube.com/watch?v=9cBJV3yTaQo) 
+* Osmocom - Harald Welte . - ehsm - 2012 [videos](https://www.youtube.com/watch?v=61k84uipPck)
+* osmocombb calypso-bts [demos](https://www.youtube.com/watch?v=FifvFov3RsI)
+* Netdev 1.1 - Running Cellular Network Infrastructure on Linux [videos](https://www.youtube.com/watch?v=I4i2Gy4JhDo)
+* OsmoDevCall - GSM-R and how it differs from GSM [videos](https://www.youtube.com/watch?v=_v3jemOojcA)
+* Harald Welte: Osmocom - Open Source Mobile Communications [vidoes](https://www.youtube.com/watch?v=vq4zXOk3Qpg)
 
 # Half MITM = Fake BTS only
 <p align="center">
