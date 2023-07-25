@@ -2,6 +2,18 @@
 * [motorola](https://www.youtube.com/watch?v=ZKa86zAWmQY&pp=ygURZ3NtIHNuaWZmaW5nIDI5YzM%3D) documentation
 * [spoofing](https://github.com/godfuzz3r/osmo-nitb-scripts/tree/master)
 * [phddays](https://sudonull.com/post/97315-MiTM-Mobile-contest-how-they-broke-mobile-communications-at-PHDays-V-Positive-Technologies-blog)
+
+# conferences
+* 25c3: Running your own GSM network [videos](https://www.youtube.com/watch?v=e_9hPRF5fzA)
+* 27c3: Running your own GSM stack on a phone [videos](https://www.youtube.com/watch?v=ihbRtTzc0NI)
+* Running a basic circuit-switched Osmocom GSM network [videos](https://www.youtube.com/watch?v=2SNb4pXnN80&t=9s)
+* Making your own 2G GSM cell network in 2023 [videos](https://www.youtube.com/watch?v=t8ZqjAlWhkc)
+* 28c3: Defending mobile phones [videos](https://www.youtube.com/watch?v=YWdHSJsEOck)
+* [PHDays 2012] Sylvain Munaut: Abusing Calypso phones [videos](https://www.youtube.com/watch?v=3lAnl-dto_g)
+* DeepSec 2010: Targeted DOS Attack and various fun with GSM Um by Sylvain Munaut [videos](https://www.youtube.com/watch?v=7tc4hD7ckZY)
+* GreedyBTS: Hacking Adventures in GSM - Presented By Hacker Fantastic [videos](https://www.youtube.com/watch?v=mqd9WePaZ8o&t=8s)
+* 27c3: Wideband GSM Sniffing [videos](https://www.youtube.com/watch?v=fH_fXSr-FhU)
+
 # Half MITM = Fake BTS only
 <p align="center">
   <img width="600" height="400" src="https://github.com/SitrakaResearchAndPOC/GSM_IMSICATCHER_HALFMITM_SPOOFING-SMS-WITH-PHYSICAL-MS/blob/main/2G.jpg">
