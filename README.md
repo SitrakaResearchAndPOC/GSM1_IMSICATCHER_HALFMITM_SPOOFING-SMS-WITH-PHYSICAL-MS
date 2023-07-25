@@ -350,10 +350,14 @@ bash delete_all.sh
 ```
 The extension 0341220590 should exist as a mobile phone on the GSM network
 
-Perspective : Using rpizero with automatedscript [demos](https://www.youtube.com/watch?v=182kSvfC0PE&t=360s) [MS-14 cable](https://fr.aliexpress.com/item/4000083338428.html?spm=a2g0o.productlist.main.107.12d551e9rpUbMv&algo_pvid=3a3391bf-5c17-474d-9ecb-d46b4c83bd56&algo_exp_id=3a3391bf-5c17-474d-9ecb-d46b4c83bd56-53&pdp_npi=3%40dis%21USD%216.29%215.35%21%21%216.29%21%21%40211be59e16895073768375296d0770%2110000000221262871%21sea%21MG%214460774833&curPageLogUid=f0DnnuBuKQPn)
+# Perspective : 
+Using rpizero with automatedscript [demos](https://www.youtube.com/watch?v=182kSvfC0PE&t=360s) [MS-14 cable](https://fr.aliexpress.com/item/4000083338428.html?spm=a2g0o.productlist.main.107.12d551e9rpUbMv&algo_pvid=3a3391bf-5c17-474d-9ecb-d46b4c83bd56&algo_exp_id=3a3391bf-5c17-474d-9ecb-d46b4c83bd56-53&pdp_npi=3%40dis%21USD%216.29%215.35%21%21%216.29%21%21%40211be59e16895073768375296d0770%2110000000221262871%21sea%21MG%214460774833&curPageLogUid=f0DnnuBuKQPn)
 
-
-
-
-
-
+# Documenations
+* https://osmocom.org/projects/baseband/wiki/CalypsoBTS
+* https://github.com/spm81/CalypsoBTS
+* https://www.smartspate.com/how-to-create-2g-network-at-your-own-home/
+* https://cyberloginit.com/2018/04/27/build-a-gsm-network-with-openbsc-osmobts-osmotrx-and-usrp-b210-on-a-single-pc.html
+* https://osmocom.org/issues/4030
+* https://www.phdays.com/en/press/news/the-mitm-mobile-contest-gsm-network-down-at-phdays-v/
+* https://osmocom.org/projects/baseband/wiki/Phones
