@@ -88,7 +88,22 @@ By
 self.db = sqlite3.connect(hlr_loc, timeout=3000)
 ```
 
-Spoof script2 modification
+Change spoof script2 modification
+```
+gedit scripts_spoof2/sending_source_dest.py  
+```
+
+Before launching sending_source_dest.py, please corret the help, change : 
+```
+usage: ./sms_broadcast.py extension message
+This script sends a message from the specified extension (number) to all devices connected to this base station
+```
+to
+```
+usage: ./sending_source_dest.py extension_source extension_destination  message
+This script sends a message from the specified extension source (number) to extension destination connected to this base station
+```
+
 
 Running the transceiver
 ```
