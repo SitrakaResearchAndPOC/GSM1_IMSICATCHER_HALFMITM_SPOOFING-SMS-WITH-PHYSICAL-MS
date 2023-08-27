@@ -420,9 +420,9 @@ Tape `*#*#4636#*#*` and choose GSM only on your Android phone
 Installing network signal guru on your android phone  
 And finding the arfcn that this one is connect  
 Let's name this arfcn as 975  
-Configure arfcn at service/osmotrx.lms as 975
+Configure arfcn at services/osmo-trx-lms3.service as 975
 ```
-gedit service/osmotrx.lms
+gedit services/osmo-trx-lms3.service
 ```
 Save the configuration
 ```
